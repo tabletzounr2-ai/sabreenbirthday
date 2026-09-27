@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Happy Birthday Sabreen 🎂</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Georgia,serif;
+background:#080014;
+color:#fff;
+overflow:hidden;
+}
+.page{
+display:none;
+width:100%;
+height:100vh;
+padding:50px 8%;
+text-align:center;
+position:relative;
+overflow:auto;
+}
+.page.active{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+animation:show .8s ease;
+}
+.page:nth-child(odd){
+background:radial-gradient(circle at top,#35105f,#10001f 60%,#050008);
+}
+.page:nth-child(even){
+background:radial-gradient(circle at bottom,#52152e,#150019 60%,#050008);
+}
+h1{
+font-size:clamp(42px,9vw,85px);
+color:#ffd76a;
+text-shadow:0 0 10px #ffbd3d,0 0 30px #ff7b00;
+margin-bottom:20px;
+}
+h2{
+font-size:clamp(30px,6vw,55px);
+color:#ffcf67;
+margin-bottom:25px;
+}
+p{
+max-width:850px;
+font-size:20px;
+line-height:1.8;
+color:#f8eaff;
+margin:8px 0;
+}
+.card{
+max-width:900px;
+padding:35px;
+border:1px solid #ffffff35;
+border-radius:30px;
+background:#ffffff0d;
+backdrop-filter:blur(12px);
+box-shadow:0 0 40px #a42cff22;
+}
+button{
+margin-top:25px;
+padding:15px 32px;
+border:1px solid #ffd76a;
+border-radius:50px;
+background:#1b092b;
+color:#ffd76a;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 20px #ffbd3d33;
+}
+button:hover{
+background:#ffd76a;
+color:#17001f;
+transform:scale(1.08);
+box-shadow:0 0 30px #ffd76a;
+}
+.heart{
+position:fixed;
+bottom:-40px;
+font-size:25px;
+z-index:20;
+animation:heart 7s linear forwards;
+pointer-events:none;
+}
+.star{
+position:fixed;
+width:3px;
+height:3px;
+background:#fff;
+border-radius:50%;
+animation:twinkle 2s infinite alternate;
+}
+.popup{
+position:fixed;
+inset:0;
+background:#000c;
+display:none;
+align-items:center;
+justify-content:center;
+z-index:100;
+padding:25px;
+}
+.popupbox{
+max-width:600px;
+padding:45px;
+border-radius:30px;
+text-align:center;
+background:linear-gradient(145deg,#241035,#09000f);
+border:1px solid #ffd76a;
+box-shadow:0 0 60px #d000ff55;
+animation:pop .5s ease;
+}
+.popupbox h2{color:#ffd76a}
+.close{
+margin-top:25px;
+}
+.number{
+color:#ffcc66;
+font-size:14px;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+@keyframes show{
+from{opacity:0;transform:translateY(30px) scale(.96)}
+to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes heart{
+0%{transform:translateY(0) rotate(0);opacity:0}
+10%{opacity:1}
+100%{transform:translateY(-115vh) rotate(360deg);opacity:0}
+}
+@keyframes twinkle{
+from{opacity:.2}
+to{opacity:1;transform:scale(1.8)}
+}
+@keyframes pop{
+from{transform:scale(.6);opacity:0}
+to{transform:scale(1);opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active">
+<div class="number">PAGE 01 / 16</div>
+<h1>Happy Birthday<br>Sabreen 🎂</h1>
+<div class="card">
+<p>✨ Today is not just another day...</p>
+<p>Today is the day when someone very special came into this world.</p>
+<p>And that special person is YOU, Sabreen. ❤️</p>
+<p>May this birthday bring a new chapter full of happiness, peace and beautiful memories.</p>
+<button onclick="nextPage()">Begin The Surprise ✨</button>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<div class="number">PAGE 02 / 16</div>
+<h2>Dear Sabreen 🌙</h2>
+<div class="card">
+<p>There are some people who make ordinary moments feel special.</p>
+<p>Some people bring happiness without even trying.</p>
+<p>Some smiles stay in our memories for a very long time.</p>
+<p>And today, this whole little website is dedicated to one such person.</p>
+<p>So Sabreen, this is your little birthday universe. 🌌</p>
+<button onclick="nextPage()">Continue 💫</button>
+</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+<div class="number">PAGE 03 / 16</div>
+<h2>A New Chapter 📖</h2>
+<div class="card">
+<p>Another year of your life has been completed.</p>
+<p>Another year of lessons, memories, smiles and experiences.</p>
+<p>Now a completely new chapter is waiting for you.</p>
+<p>May this chapter be brighter than all the previous ones.</p>
+<p>May every page contain something worth remembering.</p>
+<button onclick="nextPage()">Turn The Page 📖</button>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+<div class="number">PAGE 04 / 16</div>
+<h2>A Birthday Wish ✨</h2>
+<div class="card">
+<p>I wish that your heart always has a reason to smile.</p>
+<p>I wish that your dreams slowly become your reality.</p>
+<p>I wish that difficult days become lessons instead of regrets.</p>
+<p>I wish that beautiful days become memories you never forget.</p>
+<p>And most importantly, I wish you happiness that stays.</p>
+<button onclick="nextPage()">Next Wish 🌟</button>
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+<div class="number">PAGE 05 / 16</div>
+<h2>Keep Smiling 😊</h2>
+<div class="card">
+<p>Never underestimate the power of your smile.</p>
+<p>Sometimes one smile can completely change the atmosphere around you.</p>
+<p>So keep smiling even when life becomes a little difficult.</p>
+<p>Keep believing in yourself when things don't go according to plan.</p>
+<p>Your future still has so many beautiful surprises waiting for you.</p>
+<button onclick="nextPage()">Keep Going 💛</button>
+</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page">
+<div class="number">PAGE 06 / 16</div>
+<h2>For Your Dreams 🌠</h2>
+<div class="card">
+<p>Dream big, Sabreen.</p>
+<p>Don't be afraid of starting small.</p>
+<p>Every beautiful journey begins with one tiny step.</p>
+<p>There may be days when you doubt yourself.</p>
+<p>On those days, remember how far you have already come.</p>
+<p>Your story is still being written. ✨</p>
+<button onclick="nextPage()">Next 🌠</button>
+</div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page">
+<div class="number">PAGE 07 / 16</div>
+<h2>🎁 A Secret Surprise</h2>
+<div class="card">
+<p>Okay Sabreen...</p>
+<p>We have reached the first secret part of your birthday.</p>
+<p>There is a little message hidden behind this button.</p>
+<p>Don't overthink it...</p>
+<p>Just click it. 😌</p>
+<button onclick="openPopup('secret')">Open Secret 🎁</button>
+<button onclick="nextPage()">Continue ❤️</button>
+</div>
+</section>
+
+<!-- PAGE 8 -->
+<section class="page">
+<div class="number">PAGE 08 / 16</div>
+<h2>Beautiful Memories 📸</h2>
+<div class="card">
+<p>Life is not only about big achievements.</p>
+<p>Sometimes the smallest moments become our favorite memories.</p>
+<p>A random laugh.</p>
+<p>A late-night conversation.</p>
+<p>A silly joke.</p>
+<p>A simple day that somehow became unforgettable.</p>
+<p>May you collect thousands of moments like these.</p>
+<button onclick="nextPage()">More Memories ✨</button>
+</div>
+</section>
+
+<!-- PAGE 9 -->
+<section class="page">
+<div class="number">PAGE 09 / 16</div>
+<h2>Stay Strong 🖤</h2>
+<div class="card">
+<p>Not every day will be perfect.</p>
+<p>Sometimes plans will fail.</p>
+<p>Sometimes people will disappoint you.</p>
+<p>Sometimes life will feel confusing.</p>
+<p>But remember: one bad day does not define your entire story.</p>
+<p>Take a breath, stand up again and keep moving.</p>
+<button onclick="nextPage()">Keep Moving 🖤</button>
+</div>
+</section>
+
+<!-- PAGE 10 -->
+<section class="page">
+<div class="number">PAGE 10 / 16</div>
+<h2>You Deserve Happiness 🌹</h2>
+<div class="card">
+<p>You deserve mornings that feel peaceful.</p>
+<p>You deserve people who respect your heart.</p>
+<p>You deserve moments that make you laugh until your cheeks hurt.</p>
+<p>You deserve dreams that make you excited for tomorrow.</p>
+<p>And you deserve a life filled with genuine happiness.</p>
+<button onclick="nextPage()">Next 🌹</button>
+</div>
+</section>
+
+<!-- PAGE 11 -->
+<section class="page">
+<div class="number">PAGE 11 / 16</div>
+<h2>Make A Wish 🌟</h2>
+<div class="card">
+<p>Close your eyes for a moment.</p>
+<p>Think about one thing you really want.</p>
+<p>Don't tell anyone.</p>
+<p>Just keep it inside your heart.</p>
+<p>Now make your birthday wish...</p>
+<button onclick="openPopup('wish')">Make My Wish ✨</button>
+<button onclick="nextPage()">Continue 🎂</button>
+</div>
+</section>
+
+<!-- PAGE 12 -->
+<section class="page">
+<div class="number">PAGE 12 / 16</div>
+<h2>One More Year 🎈</h2>
+<div class="card">
+<p>One more year means one more collection of memories.</p>
+<p>One more year means new opportunities.</p>
+<p>One more year means new people, new places and new experiences.</p>
+<p>So don't just count the years.</p>
+<p>Make every year count.</p>
+<button onclick="nextPage()">Next Chapter 🎈</button>
+</div>
+</section>
+
+<!-- PAGE 13 -->
+<section class="page">
+<div class="number">PAGE 13 / 16</div>
+<h2>Tonight Is Yours 🌙</h2>
+<div class="card">
+<p>Forget the worries for a little while.</p>
+<p>Enjoy your birthday.</p>
+<p>Laugh loudly.</p>
+<p>Take lots of pictures.</p>
+<p>Eat something delicious.</p>
+<p>And create at least one memory that makes you smile years from now.</p>
+<button onclick="nextPage()">Let's Celebrate 🥳</button>
+</div>
+</section>
+
+<!-- PAGE 14 -->
+<section class="page">
+<div class="number">PAGE 14 / 16</div>
+<h2>Another Surprise 💌</h2>
+<div class="card">
+<p>Sabreen, you made it this far!</p>
+<p>So here is another little birthday message.</p>
+<p>No matter where life takes you...</p>
+<p>Always remember to stay kind, stay strong and stay true to yourself.</p>
+<p>Your individuality is what makes your story yours.</p>
+<button onclick="openPopup('love')">Open Message 💌</button>
+<button onclick="nextPage()">Next ❤️</button>
+</div>
+</section>
+
+<!-- PAGE 15 -->
+<section class="page">
+<div class="number">PAGE 15 / 16</div>
+<h2>Almost The End 🎂</h2>
+<div class="card">
+<p>We are almost at the end of this little birthday journey.</p>
+<p>But the wishes don't end here.</p>
+<p>May your next 365 days bring unexpected happiness.</p>
+<p>May you find reasons to smile on ordinary days.</p>
+<p>May your dreams get closer with every step.</p>
+<p>And may your birthday become a memory worth keeping.</p>
+<button onclick="nextPage()">Final Page 💖</button>
+</div>
+</section>
+
+<!-- PAGE 16 -->
+<section class="page">
+<div class="number">PAGE 16 / 16</div>
+<h1>🎂 Happy Birthday<br>Sabreen ❤️</h1>
+<div class="card">
+<p>This is the final page...</p>
+<p>But your new year of life is just beginning.</p>
+<p>May it be full of laughter, success, peace, love and unforgettable memories.</p>
+<p>Never stop dreaming.</p>
+<p>Never stop smiling.</p>
+<p>And never forget how special your journey is.</p>
+<p>✨ Happy Birthday once again, Sabreen! ✨</p>
+<button onclick="openPopup('final')">Final Surprise 🎁</button>
+</div>
+</section>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+<div class="popupbox">
+<h2 id="popupTitle">💖 Surprise</h2>
+<p id="popupText"></p>
+<button class="close" onclick="closePopup()">Close ❤️</button>
+</div>
+</div>
+
+<script>
+let current=0;
+const pages=document.querySelectorAll(".page");
+
+function nextPage(){
+pages[current].classList.remove("active");
+current++;
+if(current>=pages.length)current=0;
+pages[current].classList.add("active");
+}
+
+function openPopup(type){
+let title="";
+let text="";
+
+if(type==="secret"){
+title="🎁 Secret Message";
+text="Sabreen, some people are simply impossible to replace. May your life always be surrounded by people who genuinely care about you. Keep shining and keep smiling. ❤️";
+}
+
+if(type==="wish"){
+title="🌟 Wish Accepted";
+text="Your birthday wish has officially been sent to the universe! ✨ Now believe in it, work for it and let time do the rest. May something beautiful happen soon.";
+}
+
+if(type==="love"){
+title="💌 A Little Reminder";
+text="You don't have to be perfect to be amazing. You don't have to have everything figured out. Just keep being yourself and keep moving forward. 🌙";
+}
+
+if(type==="final"){
+title="🎂 FINAL SURPRISE";
+text="HAPPY BIRTHDAY SABREEN! ❤️ May this new chapter of your life be your most memorable one yet. May happiness find you again and again. 🎉✨";
+}
+
+document.getElementById("popupTitle").innerHTML=title;
+document.getElementById("popupText").innerHTML=text;
+document.getElementById("popup").style.display="flex";
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+function createHeart(){
+let heart=document.createElement("div");
+heart.className="heart";
+let symbols=["❤️","💜","💛","🖤","🤍","💕","✨","💫"];
+heart.innerHTML=symbols[Math.floor(Math.random()*symbols.length)];
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(4+Math.random()*5)+"s";
+heart.style.fontSize=(15+Math.random()*25)+"px";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),9000);
+}
+
+setInterval(createHeart,300);
+
+for(let i=0;i<80;i++){
+let star=document.createElement("div");
+star.className="star";
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+star.style.animationDelay=Math.random()*2+"s";
+document.body.appendChild(star);
+}
+</script>
+
+</body>
+</html>
